@@ -13,8 +13,7 @@ import data_loader
 import module
 
 '''
-Name: Kaustubh Hiware
-Roll: 14CS30011
+Author: @kaustubhhiware
 run with python2
 '''
 

@@ -1,15 +1,14 @@
 from zipfile import ZipFile
 import numpy as np
 '''
-Name: Kaustubh Hiware
-Roll: 14CS30011
+Author: @kaustubhhiware
 '''
 
 '''load your data here'''
 
 class DataLoader(object):
     def __init__(self, _bat_size=100):
-        DIR = '../data/'
+        DIR = './data/'
         self.batch_size = _bat_size
     
     # Returns images and labels corresponding for training and testing. Default mode is train. 
@@ -17,8 +16,8 @@ class DataLoader(object):
     def load_data(self, mode = 'train'):
         label_filename = mode + '_labels'
         image_filename = mode + '_images'
-        label_zip = '../data/' + label_filename + '.zip'
-        image_zip = '../data/' + image_filename + '.zip'
+        label_zip = './data/' + label_filename + '.zip'
+        image_zip = './data/' + image_filename + '.zip'
         with ZipFile(label_zip, 'r') as lblzip:
             labels = np.frombuffer(lblzip.read(label_filename), dtype=np.uint8, offset=8)
             encoded_labels_1hot = []

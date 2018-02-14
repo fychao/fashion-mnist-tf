@@ -5,7 +5,7 @@ Assignment 3 code for Deep Learning, CS60045.
 
 MNIST data provides us very high accuracy with simple models, so we will be using fashion-MNIST.
 
-Our network has 3 hidden layers, with 50 epochs/iterations. Refer to [Report](Report.pdf) for more details.
+The neural network has 3 hidden layers, with 50 epochs/iterations. Refer to [Report](Report.pdf) for more details.
 
 ## Performance.
 
@@ -33,21 +33,27 @@ The first layer seems to provide enough accuracy, which proves further layers mi
 
 ## Usage
 
-> python train.py --train
+`python train.py --train`
 
 Run training, save weights into `weights/` folder.
 
-> python train.py --train iter=5
+`python train.py --train iter=5`
 
-Rain training with specified number of iterations.
+Rain training with specified number of iterations. Default iterations are 50.
 
-> python train.py --test
+`python train.py --test`
 
 Load precomputed weights and report test accuracy.
 
-> python train.py --layer=1
+`python train.py --layer=1`
 
 Run Logistic Regression on hidden layer's output and report the accuracy. Allowed options : 1, 2, 3.
+
+## Code structure
+
+* [`data_loader`](data_loader.py) is used to load data from zip files in `data` folder.
+* [`module`](module.py) defines the neural network parameters, and network related code.
+* [`train`](train.py) handles input and states the model.
 
 
 ## License

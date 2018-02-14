@@ -3,8 +3,7 @@ import math
 import tensorflow as tf
 
 '''
-Name: Kaustubh Hiware
-Roll: 14CS30011
+Author: @kaustubhhiware
 '''
 
 input_nodes = 784
