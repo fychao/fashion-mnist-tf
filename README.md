@@ -1,7 +1,7 @@
 # fashion-mnist-tf
 Multi-class classification for Fashion-MNIST in tensorflow
 
-Assignment 3 code for Deep Learning, CS60045.
+Assignment 3 code for Deep Learning, CS60010.
 
 MNIST data provides us very high accuracy with simple models, so we will be using fashion-MNIST.
 
@@ -39,7 +39,7 @@ Run training, save weights into `weights/` folder.
 
 `python train.py --train iter=5`
 
-Rain training with specified number of iterations. Default iterations are 50.
+Run training with specified number of iterations. Default iterations are 50.
 
 `python train.py --test`
 
